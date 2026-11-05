@@ -1,0 +1,9 @@
+# Base SQLite et données générées
+server/data/
+app/data/
+
+# Copie locale de l'API pour les tests (cp server/api.php app/)
+app/api.php
+
+# Outillage Capacitor
+node_modules/

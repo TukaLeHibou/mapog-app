@@ -1,0 +1,19 @@
+{
+  "name": "mapog",
+  "version": "0.1.0",
+  "description": "Fog of War IRL — découvre la vraie carte du monde en te déplaçant",
+  "private": true,
+  "scripts": {
+    "sync": "cap sync",
+    "android": "cap open android",
+    "dev": "php -S 0.0.0.0:8080 -t app"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor-community/background-geolocation": "^1.2.20"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}

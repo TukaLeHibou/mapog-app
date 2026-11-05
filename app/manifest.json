@@ -1,0 +1,19 @@
+{
+  "name": "Mapog — Fog of War IRL",
+  "short_name": "Mapog",
+  "description": "Découvre la vraie carte du monde en te déplaçant, comme dans un jeu vidéo.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

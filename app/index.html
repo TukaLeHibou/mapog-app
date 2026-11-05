@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#07090e">
+  <title>Mapog — Fog of War IRL</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <header id="topbar">
+    <span id="net-dot" class="dot offline" title="État réseau"></span>
+    <h1>MAPOG</h1>
+    <span id="stats">0 zones</span>
+  </header>
+
+  <nav id="controls">
+    <button id="btn-follow" class="fab active" title="Suivre ma position">◎</button>
+    <button id="btn-gps" class="fab" title="GPS on/off">📡</button>
+    <button id="btn-account" class="fab" title="Compte">👤</button>
+  </nav>
+
+  <div id="toast" class="hidden"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>Compte</h2>
+
+      <div id="account-logged" class="hidden">
+        <p>Connecté : <strong id="account-name"></strong></p>
+        <p id="sync-info" class="muted">—</p>
+        <button id="btn-sync-now">Synchroniser maintenant</button>
+        <button id="btn-logout" class="danger">Déconnexion</button>
+      </div>
+
+      <div id="account-forms">
+        <p class="muted">Sans compte, ta progression reste sur ce téléphone.
+        Avec un compte, elle est sauvegardée sur le serveur dès qu'il y a du réseau
+        (l'app fonctionne hors-ligne, la sync rattrape tout au retour).</p>
+        <input id="in-user" placeholder="Pseudo" autocomplete="username">
+        <input id="in-pass" type="password" placeholder="Mot de passe (8 caractères min)" autocomplete="current-password">
+        <p id="account-error" class="error"></p>
+        <button id="btn-register">Créer un compte</button>
+        <button id="btn-login" class="ghost">Se connecter</button>
+      </div>
+
+      <button id="btn-close" class="ghost">Fermer</button>
+    </div>
+  </div>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/fog.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/sync.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

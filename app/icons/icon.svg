@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#07090e"/>
+  <!-- carte cachée par le brouillard -->
+  <g stroke="#232a36" stroke-width="10" fill="none">
+    <path d="M80 200 L200 140 L320 190 L432 130"/>
+    <path d="M80 320 L190 280 L310 340 L432 290"/>
+  </g>
+  <!-- zone révélée -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#3ddc97" stroke-width="14"/>
+  <circle cx="256" cy="256" r="78" fill="#3ddc97" opacity="0.18"/>
+  <circle cx="256" cy="256" r="26" fill="#3ddc97"/>
+  <!-- balayage radar -->
+  <path d="M256 256 L256 136 A120 120 0 0 1 360 196 Z" fill="#3ddc97" opacity="0.35"/>
+</svg>

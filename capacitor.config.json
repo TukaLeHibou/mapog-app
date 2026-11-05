@@ -1,0 +1,8 @@
+{
+  "appId": "click.goret.mapog",
+  "appName": "Mapog",
+  "webDir": "app",
+  "android": {
+    "allowMixedContent": false
+  }
+}
